@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya U - Developer Portfolio</title>
+    <meta name="description" content="[Your description] - Full Stack Developer Portfolio">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="#home" class="nav-logo">portfolio.exe</a>
+                <div class="nav-links">
+                    <button onclick="scrollToSection('home')" class="nav-link">home</button>
+                    <button onclick="scrollToSection('work')" class="nav-link">work</button>
+                    <button onclick="scrollToSection('skills')" class="nav-link">skills</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">about</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">contact</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section-home">
+        <div class="container text-center">
+            <div class="home-greeting">
+                HI, I'M <span class="accent-text-purple">ADITHYA U</span>
+            </div>
+            
+            <h1 class="hero-title">
+                BACKEND
+                DEVELOPER
+            </h1>
+
+            <p class="hero-description">
+                
+                I work on chatbots, AI/ML projects, and full-stack applications, and I enjoy building projects that are practical and useful. I’m interested in machine learning, information retrieval (RAG), and building clean UI/UX experiences, and I like learning new things to improve my work. In my free time, I also enjoy experimenting with side projects, exploring new tech stacks, and improving my coding skills.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('about')" class="btn-outline">
+                    Know More
+                </button>
+                <button onclick="scrollToSection('contact')" class="btn-primary">
+                    Get in touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">PRACTICE WORK</h2>
+            
+            <div class="work-list">
+                <div class="work-item">
+                    <a href="https://github.com/sulphurr/collegebot" class="work-link">
+                        <div class="work-content active">
+                            <h3 class="work-title">
+                                College Assistant Chatbot
+                            </h3>
+                            <div class="work-details">
+                                <div>HTML / CSS / JS /FastAPI / Uvicorn / Python</div>
+                                <div>2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work-item">
+                    <a href="https://github.com/adithyaupendran/Mocking_bot" class="work-link">
+                        <div class="work-content">
+                            <h3 class="work-title">
+                                Mocking bot
+                            </h3>
+                            <div class="work-details">
+                                <div>Python / Google Gemini</div>
+                                <div>2024</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work-item">
+                    <a href="https://github.com/adithyaupendran/stockpredictor" class="work-link">
+                        <div class="work-content">
+                            <h3 class="work-title">
+                               Stock Predictor Archived
+                            </h3>
+                            <div class="work-details">
+                                <div>Python / Streamlit / numpy</div>
+                                <div>2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt portfolio-section">
+        <div class="container">
+            <h2 class="section-title">SKILLS & TECHNOLOGIES</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">FRONTEND</h3>
+                    <div class="skill-list">
+                        <div>JAVASCRIPT</div>
+                        <div>TYPESCRIPT</div>
+                        <div>REACT.JS</div>
+                        <div>TAILWIND CSS</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">BACKEND</h3>
+                    <div class="skill-list">
+                        <div>NODE.JS</div>
+                        <div>PYTHON</div>
+                        <div>C</div>
+                        <div>JAVA</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">TOOLS</h3>
+                    <div class="skill-list">
+                        <div>GIT</div>
+                        <div>VS CODE</div>
+                        <div>FIGMA</div>
+                        <div>AI TOOLS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">ABOUT</h2>
+            
+            <div class="about-content">
+                <p>
+                    Im Adithya, a developer who enjoys building practical projects that solve real problems. I’m passionate about AI, machine learning, and creating clean, user-friendly applications. I like experimenting with new tech, learning quickly, and improving a little with every project.
+                </p>
+                
+                <p>
+                    I approach development with a simple philosophy: build things that are clean, practical, and actually helpful. I love breaking ideas apart, experimenting with them, and turning them into something that works. My quirky habit? I can’t stop refining a project until it feels “just right,” even if no one else notices the difference.
+                </p>
+                
+                <p>
+                    When I'm not coding, you'll find me:
+                </p>
+                
+                <ul class="about-list">
+                    <li>→ GAMING</li>
+                    <li>→ EDITING VIDEOS</li>
+                    <li>→ FIXING KEYBOARDS</li>
+                </ul>
+                
+                <p>
+                    Open to chats, collabs, and interesting projects — especially the ones that make you think, “this might actually work".
+                </p>
+                
+                <p class="about-note">
+                    P.S. If you find any bugs in my work, they’re features. Please don’t ruin the illusion.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt portfolio-section">
+        <div class="container text-center">
+            <h2 class="section-title">LET'S BUILD SOMETHING COOL</h2>
+            
+            <p class="contact-description">
+                Got a project in mind? Want to collaborate? Or just want to say hi? 
+                Drop me a line and let's turn ideas into reality.
+            </p>
+            
+            <div class="contact-info">
+                <div>
+                    <a href="mailto:[adi.upendran888@gmail.com]" class="contact-email">
+                        adi.upendran888@gmail.com
+                    </a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/adithyaupendran" class="social-link">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/adithyau03/" class="social-link">LINKEDIN</a>
+                    <a href="https://www.reddit.com/user/Dear-Entertainer-149/" class="social-link">REDDIT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>
+                © 2025 [Adithya U] — ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
